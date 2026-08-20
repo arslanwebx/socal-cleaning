@@ -1436,6 +1436,30 @@
       .hero-copy{font-size:1rem}
       .hero-quote-panel{margin-top:28px}
     }
+
+    /* Centered brand with a simple left-navigation / right-action header. */
+    .nav{position:relative}
+    .site-header .brand{position:absolute;left:50%;transform:translateX(-50%);z-index:2;white-space:nowrap}
+    .site-header .brand small{display:none}
+    .nav-links{margin-right:auto}
+    .nav-actions{margin-left:auto}
+    .nav-quote{min-height:42px;padding-inline:17px;font-size:.86rem}
+    .hero h1{max-width:760px;margin:22px auto 20px;line-height:.98}
+    .hero-copy{max-width:610px;margin-bottom:27px}
+    .hero-actions{margin-bottom:20px}
+
+    @media (max-width:1050px){
+      .site-header .brand{position:absolute}
+      .nav-actions{gap:9px}
+      .phone-link{display:none}
+    }
+    @media (max-width:560px){
+      .site-header .brand{font-size:.9rem}
+      .site-header .brand-mark{width:38px;height:38px}
+      .nav-quote{padding-inline:12px;font-size:.78rem}
+      .nav-quote .icon{display:none}
+      .hero h1{max-width:430px;line-height:1.02}
+    }
   </style>
 
   <script type="application/ld+json">
@@ -1521,7 +1545,7 @@
     <div class="container nav">
       <a href="#top" class="brand" aria-label="SoCal Cleaning Company home">
         <span class="brand-mark"><svg><use href="#i-sparkle"></use></svg></span>
-        <span>SoCal Cleaning Co.<small>Fresh spaces, less stress</small></span>
+        <span>SoCal Cleaning Co.</span>
       </a>
 
       <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
@@ -1529,11 +1553,11 @@
         <a href="#why-us">Why us</a>
         <a href="#reviews">Reviews</a>
         <a href="#faq">FAQ</a>
-        <a class="btn btn-primary" href="#quote">Get a free quote <svg class="icon"><use href="#i-arrow"></use></svg></a>
       </nav>
 
       <div class="nav-actions">
         <a class="phone-link" href="tel:+17143379611"><svg class="icon"><use href="#i-phone"></use></svg> (714) 337-9611</a>
+        <a class="btn btn-primary nav-quote" href="#quote">Get a free quote <svg class="icon"><use href="#i-arrow"></use></svg></a>
         <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
           <svg class="icon"><use href="#i-menu"></use></svg>
         </button>
@@ -1554,8 +1578,8 @@
             </h1>
 
             <p class="hero-copy reveal delay-2">
-              Come back to a beautifully clean home without losing your day to chores.
-              <strong>SoCal Cleaning Company</strong> delivers detail-focused cleaning built around your space and schedule.
+              Enjoy a beautifully clean home without giving up your day to chores.
+              <strong>Trusted local cleaners, tailored to your space and schedule.</strong>
             </p>
 
             <div class="hero-actions reveal delay-3">
@@ -1968,7 +1992,7 @@
       <div>
         <a href="#top" class="brand">
           <span class="brand-mark"><svg><use href="#i-sparkle"></use></svg></span>
-          <span>SoCal Cleaning Co.<small>Fresh spaces, less stress</small></span>
+          <span>SoCal Cleaning Co.</span>
         </a>
         <p class="footer-copy">Professional cleaning for homes and workplaces across Southern California. Designed to give you a cleaner space and more time back.</p>
       </div>
