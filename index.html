@@ -1475,6 +1475,76 @@
       .nav-quote .icon{display:none}
       .hero h1{max-width:430px;line-height:1.02}
     }
+
+    /* Mobile layout pass: keep every major block inside the viewport. */
+    @media (max-width:1050px){
+      .nav{min-height:68px}
+      .nav-links{top:106px;left:12px;right:12px}
+      .hero{min-height:620px}
+      .split-grid{grid-template-columns:1fr;gap:42px}
+      .image-stack{order:2;min-height:520px}
+      .quote-form .quote-fields{grid-template-columns:1fr 1fr}
+    }
+
+    @media (max-width:780px){
+      .container{width:min(var(--container),calc(100% - 28px))}
+      .section{padding:68px 0}
+      .section-sm{padding:52px 0}
+      .hero{min-height:600px;padding:56px 0 58px;background-position:68% center}
+      .hero .hero-content{padding:22px 0}
+      .hero h1{font-size:clamp(2.55rem,9vw,4.6rem)}
+      .hero-copy{width:100%;max-width:610px}
+      .hero-actions{gap:10px}
+      .hero-actions .btn{min-height:50px;padding-inline:18px}
+      .trust-item{padding:18px 16px}
+      .image-stack{min-height:500px}
+      .image-main{inset:0 42px 54px 0}
+      .quality-badge{left:0;bottom:34px}
+      .gallery-grid{gap:12px}
+      .gallery-card:first-child{height:360px}
+      .gallery-card{height:270px}
+      .cta-card{padding:36px 28px}
+      .footer-main{gap:30px}
+    }
+
+    @media (max-width:560px){
+      .announcement-inner{min-height:42px;padding:7px 0;line-height:1.25}
+      .nav{min-height:64px}
+      .site-header .brand{font-size:.84rem}
+      .site-header .brand-mark{width:34px;height:34px}
+      .nav-quote{display:none}
+      .menu-btn{width:40px;height:40px}
+      .nav-links{top:98px}
+      .hero{min-height:0;padding:44px 0 50px;background-position:70% center}
+      .hero::before{background:linear-gradient(90deg,rgba(250,249,246,.94) 0%,rgba(250,249,246,.78) 50%,rgba(250,249,246,.28) 82%,rgba(250,249,246,0) 100%)}
+      .hero .hero-content{padding:14px 0}
+      .hero h1{max-width:100%;font-size:clamp(2.35rem,11vw,3.6rem);line-height:1.02}
+      .hero-title-line{white-space:normal}
+      .hero-copy{font-size:.98rem;line-height:1.55}
+      .hero-actions{display:grid;grid-template-columns:1fr;width:100%;margin-top:22px}
+      .hero-actions .btn{width:100%}
+      .quote-form{padding:16px}
+      .quote-form .quote-fields{grid-template-columns:1fr;gap:10px}
+      .quote-form .quote-fields .btn{grid-column:auto}
+      .quote-form .quote-privacy{font-size:.68rem;line-height:1.4}
+      .service-card,.step,.review-card{padding:22px}
+      .image-stack{min-height:430px}
+      .image-main{inset:0 20px 56px 0}
+      .image-small{width:48%;height:40%;border-width:5px}
+      .quality-badge{left:6px;bottom:24px;padding:14px;max-width:190px}
+      .stats-grid{gap:1px}
+      .stat{min-height:125px;padding:16px 10px}
+      .stat-number{font-size:2.5rem}
+      .gallery-card:first-child{height:300px}
+      .gallery-card{height:230px}
+      .rating-panel{padding:28px 22px}
+      .big-rating strong{font-size:4rem}
+      .cta-card{padding:30px 22px}
+      .cta-card h2{font-size:2.25rem}
+      .footer-main{padding:54px 0 34px}
+      .footer-bottom{gap:10px;line-height:1.45}
+      .floating-call{width:52px;height:52px}
+    }
   </style>
 
   <script type="application/ld+json">
