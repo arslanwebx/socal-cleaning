@@ -1657,8 +1657,15 @@
     .floating-call::before{border-color:rgba(150,111,138,.35)}
     .hero{background-position:center top}
     .site-header .phone-link{display:none}
+    .brand{font-size:1.1rem}
+    .brand-mark{width:44px;height:44px}
     @media (max-width:780px){
       .hero{background-position:70% top}
+    }
+    @media (max-width:560px){
+      .site-header .brand{font-size:.92rem}
+      .site-header .brand-mark{width:37px;height:37px}
+      .footer-main .brand{font-size:1rem}
     }
   </style>
 
@@ -1745,7 +1752,7 @@
     <div class="container nav">
       <a href="#top" class="brand" aria-label="BrightNest Cleaning Company home">
         <span class="brand-mark"><svg><use href="#i-sparkle"></use></svg></span>
-        <span>BrightNest Cleaning Co.</span>
+        <span>BrightNest Cleaning</span>
       </a>
 
       <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
@@ -2205,7 +2212,7 @@
       <div>
         <a href="#top" class="brand">
           <span class="brand-mark"><svg><use href="#i-sparkle"></use></svg></span>
-          <span>BrightNest Cleaning Co.</span>
+          <span>BrightNest Cleaning</span>
         </a>
         <p class="footer-copy">Professional cleaning for homes and workplaces across Orange County, California. Designed to give you a cleaner space and more time back.</p>
       </div>
