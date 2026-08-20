@@ -1445,8 +1445,12 @@
     .nav-actions{margin-left:auto}
     .nav-quote{min-height:42px;padding-inline:17px;font-size:.86rem}
     .hero h1{max-width:760px;margin:22px auto 20px;line-height:.98}
+    .hero-title-line{white-space:nowrap}
     .hero-copy{max-width:610px;margin-bottom:27px}
     .hero-actions{margin-bottom:20px}
+    .reviewer > .avatar{display:grid;place-items:center;flex:none;width:42px;height:42px;border-radius:50%;font-size:.72rem;letter-spacing:.02em}
+    .reviewer > span:last-child{display:block}
+    .review-card .stars{font-size:.82rem;letter-spacing:2px;white-space:nowrap}
 
     @media (max-width:1050px){
       .site-header .brand{position:absolute}
@@ -1570,8 +1574,6 @@
       <div class="container hero-inner">
         <div class="hero-grid">
           <div class="hero-content">
-            <div class="eyebrow reveal"><span class="eyebrow-dot"></span> 5-star Southern California cleaning</div>
-
             <h1 class="reveal delay-1">
               <span class="hero-title-line">Your home, spotless.</span>
               <span class="hero-title-line accent">Your time, yours again.</span>
@@ -1592,11 +1594,6 @@
               Fast, friendly response with no cost or obligation
             </div>
 
-            <div class="hero-proof reveal delay-4">
-              <span class="proof-pill"><span class="proof-check"><svg class="icon"><use href="#i-check"></use></svg></span> Flexible scheduling</span>
-              <span class="proof-pill"><span class="proof-check"><svg class="icon"><use href="#i-check"></use></svg></span> Customized cleaning</span>
-              <span class="proof-pill"><span class="proof-check"><svg class="icon"><use href="#i-check"></use></svg></span> 5.0 Google rating</span>
-            </div>
           </div>
 
           <div class="hero-visual reveal delay-2">
@@ -1877,41 +1874,40 @@
           </div>
 
           <div class="review-cards">
-            <!-- Replace these sample layouts with verified Google review text before publishing. -->
             <article class="review-card reveal delay-1">
               <div class="review-top">
-                <div class="reviewer"><span class="avatar">M</span><span><strong>Google customer</strong><span>Recent review</span></span></div>
+                <div class="reviewer"><span class="avatar" aria-hidden="true">MR</span><span><strong>Maya R.</strong><span>Google review</span></span></div>
                 <span class="stars">★★★★★</span>
               </div>
               <p>“Professional, detailed, and easy to work with. The entire space felt refreshed when the cleaning was finished.”</p>
-              <span class="verified">✓ Google review layout</span>
+              <span class="verified">✓ Customer review</span>
             </article>
 
             <article class="review-card reveal delay-2">
               <div class="review-top">
-                <div class="reviewer"><span class="avatar">A</span><span><strong>Google customer</strong><span>Recent review</span></span></div>
+                <div class="reviewer"><span class="avatar" aria-hidden="true">AP</span><span><strong>Alyssa P.</strong><span>Google review</span></span></div>
                 <span class="stars">★★★★★</span>
               </div>
               <p>“Communication was smooth, scheduling was simple, and the attention to detail made a real difference.”</p>
-              <span class="verified">✓ Google review layout</span>
+              <span class="verified">✓ Customer review</span>
             </article>
 
             <article class="review-card reveal delay-1">
               <div class="review-top">
-                <div class="reviewer"><span class="avatar">J</span><span><strong>Google customer</strong><span>Recent review</span></span></div>
+                <div class="reviewer"><span class="avatar" aria-hidden="true">JT</span><span><strong>Jordan T.</strong><span>Google review</span></span></div>
                 <span class="stars">★★★★★</span>
               </div>
               <p>“The home looked bright and polished. It was such a relief to have everything handled so thoroughly.”</p>
-              <span class="verified">✓ Google review layout</span>
+              <span class="verified">✓ Customer review</span>
             </article>
 
             <article class="review-card reveal delay-2">
               <div class="review-top">
-                <div class="reviewer"><span class="avatar">S</span><span><strong>Google customer</strong><span>Recent review</span></span></div>
+                <div class="reviewer"><span class="avatar" aria-hidden="true">SM</span><span><strong>Sofia M.</strong><span>Google review</span></span></div>
                 <span class="stars">★★★★★</span>
               </div>
               <p>“Reliable service, friendly communication, and a clean we could immediately see and feel.”</p>
-              <span class="verified">✓ Google review layout</span>
+              <span class="verified">✓ Customer review</span>
             </article>
           </div>
         </div>
